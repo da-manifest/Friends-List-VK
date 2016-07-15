@@ -1,0 +1,3 @@
+target ‘Friends List VK’ do
+pod ‘VK-ios-sdk’
+end

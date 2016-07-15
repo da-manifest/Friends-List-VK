@@ -13,9 +13,13 @@
 		84F39D2A1D39452E005DF68D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F39D281D39452E005DF68D /* Main.storyboard */; };
 		84F39D2C1D39452E005DF68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F39D2B1D39452E005DF68D /* Assets.xcassets */; };
 		84F39D2F1D39452E005DF68D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F39D2D1D39452E005DF68D /* LaunchScreen.storyboard */; };
+		84F39D371D395933005DF68D /* 25684.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F39D361D395933005DF68D /* 25684.png */; };
+		84F39D3A1D396C8D005DF68D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F39D391D396C8D005DF68D /* LoginViewController.m */; };
+		D408355BD9CDEAA15A039660 /* libPods-Friends List VK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D55D75BEBDDE952E0E7305 /* libPods-Friends List VK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A3049944F204BD31B91170D /* Pods-Friends List VK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friends List VK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Friends List VK/Pods-Friends List VK.release.xcconfig"; sourceTree = "<group>"; };
 		84F39D1C1D39452E005DF68D /* Friends List VK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friends List VK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F39D201D39452E005DF68D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84F39D221D39452E005DF68D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,11 @@
 		84F39D2B1D39452E005DF68D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F39D2E1D39452E005DF68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F39D301D39452E005DF68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F39D361D395933005DF68D /* 25684.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 25684.png; sourceTree = "<group>"; };
+		84F39D381D396C8D005DF68D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		84F39D391D396C8D005DF68D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		87D55D75BEBDDE952E0E7305 /* libPods-Friends List VK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Friends List VK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6BB13D7D16B2DE915F92A2 /* Pods-Friends List VK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friends List VK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Friends List VK/Pods-Friends List VK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +42,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D408355BD9CDEAA15A039660 /* libPods-Friends List VK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01BEC0A77AEB8BB315AC202F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87D55D75BEBDDE952E0E7305 /* libPods-Friends List VK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71682E2B7BB6168382F63523 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF6BB13D7D16B2DE915F92A2 /* Pods-Friends List VK.debug.xcconfig */,
+				6A3049944F204BD31B91170D /* Pods-Friends List VK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		84F39D131D39452D005DF68D = {
 			isa = PBXGroup;
 			children = (
 				84F39D1E1D39452E005DF68D /* Friends List VK */,
 				84F39D1D1D39452E005DF68D /* Products */,
+				71682E2B7BB6168382F63523 /* Pods */,
+				01BEC0A77AEB8BB315AC202F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +95,8 @@
 				84F39D2B1D39452E005DF68D /* Assets.xcassets */,
 				84F39D2D1D39452E005DF68D /* LaunchScreen.storyboard */,
 				84F39D301D39452E005DF68D /* Info.plist */,
+				84F39D381D396C8D005DF68D /* LoginViewController.h */,
+				84F39D391D396C8D005DF68D /* LoginViewController.m */,
 				84F39D1F1D39452E005DF68D /* Supporting Files */,
 			);
 			path = "Friends List VK";
@@ -74,6 +105,7 @@
 		84F39D1F1D39452E005DF68D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84F39D361D395933005DF68D /* 25684.png */,
 				84F39D201D39452E005DF68D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -86,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F39D331D39452E005DF68D /* Build configuration list for PBXNativeTarget "Friends List VK" */;
 			buildPhases = (
+				669AAD4B8F4FCB427446C155 /* [CP] Check Pods Manifest.lock */,
 				84F39D181D39452D005DF68D /* Sources */,
 				84F39D191D39452D005DF68D /* Frameworks */,
 				84F39D1A1D39452D005DF68D /* Resources */,
+				984209B7A63C79A14F5E3483 /* [CP] Embed Pods Frameworks */,
+				A95934E9A721022CB6686F2D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F39D2F1D39452E005DF68D /* LaunchScreen.storyboard in Resources */,
+				84F39D371D395933005DF68D /* 25684.png in Resources */,
 				84F39D2C1D39452E005DF68D /* Assets.xcassets in Resources */,
 				84F39D2A1D39452E005DF68D /* Main.storyboard in Resources */,
 			);
@@ -144,11 +180,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		669AAD4B8F4FCB427446C155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		984209B7A63C79A14F5E3483 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Friends List VK/Pods-Friends List VK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A95934E9A721022CB6686F2D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Friends List VK/Pods-Friends List VK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84F39D181D39452D005DF68D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F39D3A1D396C8D005DF68D /* LoginViewController.m in Sources */,
 				84F39D271D39452E005DF68D /* ViewController.m in Sources */,
 				84F39D241D39452E005DF68D /* AppDelegate.m in Sources */,
 				84F39D211D39452E005DF68D /* main.m in Sources */,
@@ -261,6 +346,7 @@
 		};
 		84F39D341D39452E005DF68D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF6BB13D7D16B2DE915F92A2 /* Pods-Friends List VK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Friends List VK/Info.plist";
@@ -272,6 +358,7 @@
 		};
 		84F39D351D39452E005DF68D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A3049944F204BD31B91170D /* Pods-Friends List VK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Friends List VK/Info.plist";
@@ -300,6 +387,7 @@
 				84F39D351D39452E005DF68D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

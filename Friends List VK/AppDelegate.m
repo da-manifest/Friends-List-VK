@@ -7,17 +7,41 @@
 //
 
 #import "AppDelegate.h"
+#import "VKSdk.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <VKSdkDelegate, VKSdkUIDelegate>
 
 @end
 
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [[VKSdk initializeWithAppId:@"5549191"] registerDelegate:self];
+    
+//    self.window = [UIWindow new];
+//    UIStoryboard *login = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    [self.window setRootViewController:[login instantiateInitialViewController]];
+//    [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void) vkSdkAccessAuthorizationFinishedWithResult:(VKAuthorizationResult *)result
+{
+    
+}
+
+- (void) vkSdkUserAuthorizationFailed
+{
+    
+}
+
+- (void) vkSdkShouldPresentViewController:(UIViewController *)controller
+{
+    [self.window.rootViewController presentViewController:controller animated:YES completion:^{
+        
+    }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
