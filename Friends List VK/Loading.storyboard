@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3n9-Mb-0kn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="KZb-Up-X3O">
+            <objects>
+                <viewController id="3n9-Mb-0kn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q0L-VO-BED"/>
+                        <viewControllerLayoutGuide type="bottom" id="vg9-Us-ESV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bZS-ee-EG9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="25684.png" translatesAutoresizingMaskIntoConstraints="NO" id="MLn-Jy-X7K">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5C6-5n-G6o">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5C6-5n-G6o" firstAttribute="leading" secondItem="bZS-ee-EG9" secondAttribute="leadingMargin" id="Dsu-Nn-bp2"/>
+                            <constraint firstItem="MLn-Jy-X7K" firstAttribute="leading" secondItem="bZS-ee-EG9" secondAttribute="leadingMargin" id="Ejv-hY-kVH"/>
+                            <constraint firstItem="5C6-5n-G6o" firstAttribute="trailing" secondItem="bZS-ee-EG9" secondAttribute="trailingMargin" id="F6K-eb-6pN"/>
+                            <constraint firstItem="vg9-Us-ESV" firstAttribute="top" secondItem="5C6-5n-G6o" secondAttribute="bottom" id="Ne2-LT-6M5"/>
+                            <constraint firstItem="vg9-Us-ESV" firstAttribute="top" secondItem="5C6-5n-G6o" secondAttribute="bottom" id="PP5-00-71v"/>
+                            <constraint firstItem="5C6-5n-G6o" firstAttribute="leading" secondItem="bZS-ee-EG9" secondAttribute="leadingMargin" id="QNp-Fj-kXE"/>
+                            <constraint firstItem="5C6-5n-G6o" firstAttribute="top" secondItem="Q0L-VO-BED" secondAttribute="bottom" id="XRb-Ym-Olg"/>
+                            <constraint firstItem="vg9-Us-ESV" firstAttribute="top" secondItem="MLn-Jy-X7K" secondAttribute="bottom" id="ZJL-O3-Y9u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5C6-5n-G6o" secondAttribute="trailing" id="eVV-hu-LOn"/>
+                            <constraint firstItem="MLn-Jy-X7K" firstAttribute="top" secondItem="Q0L-VO-BED" secondAttribute="bottom" id="eb1-Lb-YRj"/>
+                            <constraint firstItem="5C6-5n-G6o" firstAttribute="top" secondItem="Q0L-VO-BED" secondAttribute="bottom" id="pj7-ef-H9Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MLn-Jy-X7K" secondAttribute="trailing" id="zcI-rW-wh0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="F6K-eb-6pN"/>
+                                <exclude reference="QNp-Fj-kXE"/>
+                                <exclude reference="XRb-Ym-Olg"/>
+                                <exclude reference="PP5-00-71v"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oM4-BR-RqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368" y="-45"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="25684.png" width="512" height="512"/>
+    </resources>
+</document>

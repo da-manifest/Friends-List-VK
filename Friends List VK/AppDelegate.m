@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "VKSdk.h"
+#import "FLNotificationConstants.h"
 
 @interface AppDelegate () <VKSdkDelegate, VKSdkUIDelegate>
 
@@ -18,23 +19,49 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[VKSdk initializeWithAppId:@"5549191"] registerDelegate:self];
+    VKSdk *sdk = [VKSdk initializeWithAppId:@"5549191"];
+    [sdk registerDelegate:self];
+    [sdk setUiDelegate:self];
     
-//    self.window = [UIWindow new];
-//    UIStoryboard *login = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    [self.window setRootViewController:[login instantiateInitialViewController]];
-//    [self.window makeKeyAndVisible];
+    self.window = [UIWindow new];
+    [self.window makeKeyAndVisible];
+    
+    UIStoryboard *loading = [UIStoryboard storyboardWithName:@"Loading" bundle:nil];
+    [self.window setRootViewController:[loading instantiateInitialViewController]];
+
+    [self wakeUpSessionVK];
+    
     return YES;
+}
+
+- (void)wakeUpSessionVK
+{
+    [VKSdk wakeUpSession:VKSCOPE completeBlock:^(VKAuthorizationState state, NSError *error) {
+        if (state == VKAuthorizationAuthorized) {
+            UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            [self.window setRootViewController:[main instantiateInitialViewController]];
+        } else if (error) {
+            UIStoryboard *login = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+            [self.window setRootViewController:[login instantiateInitialViewController]];        }
+    }];
 }
 
 - (void) vkSdkAccessAuthorizationFinishedWithResult:(VKAuthorizationResult *)result
 {
-    
+    [[NSNotificationCenter defaultCenter] postNotificationName:FLNotificationAuthorizationFinished object:result];
+    UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    [self.window setRootViewController:[main instantiateInitialViewController]];
 }
 
 - (void) vkSdkUserAuthorizationFailed
 {
-    
+    [[NSNotificationCenter defaultCenter] postNotificationName:FLNotificationAuthorizationFailed object:nil];
+}
+
+- (void) vkSdkNeedCaptchaEnter:(VKError *)captchaError
+{
+    VKCaptchaViewController *vc = [VKCaptchaViewController captchaControllerWithError:captchaError];
+    [vc presentIn:self.window.rootViewController];
 }
 
 - (void) vkSdkShouldPresentViewController:(UIViewController *)controller

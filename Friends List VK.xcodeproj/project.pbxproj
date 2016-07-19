@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843FA8C81D3E2DC100329ED3 /* Loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843FA8C71D3E2DC100329ED3 /* Loading.storyboard */; };
+		843FA8CA1D3E307600329ED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843FA8C91D3E307600329ED3 /* Main.storyboard */; };
+		843FA8CD1D3E391700329ED3 /* FriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843FA8CC1D3E391700329ED3 /* FriendsTableViewController.m */; };
+		843FA8D01D3E3F6200329ED3 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843FA8CF1D3E3F6200329ED3 /* UserTableViewCell.m */; };
 		84F39D211D39452E005DF68D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F39D201D39452E005DF68D /* main.m */; };
 		84F39D241D39452E005DF68D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F39D231D39452E005DF68D /* AppDelegate.m */; };
 		84F39D271D39452E005DF68D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F39D261D39452E005DF68D /* ViewController.m */; };
-		84F39D2A1D39452E005DF68D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F39D281D39452E005DF68D /* Main.storyboard */; };
+		84F39D2A1D39452E005DF68D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F39D281D39452E005DF68D /* Login.storyboard */; };
 		84F39D2C1D39452E005DF68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F39D2B1D39452E005DF68D /* Assets.xcassets */; };
 		84F39D2F1D39452E005DF68D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F39D2D1D39452E005DF68D /* LaunchScreen.storyboard */; };
 		84F39D371D395933005DF68D /* 25684.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F39D361D395933005DF68D /* 25684.png */; };
@@ -20,13 +24,20 @@
 
 /* Begin PBXFileReference section */
 		6A3049944F204BD31B91170D /* Pods-Friends List VK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friends List VK.release.xcconfig"; path = "Pods/Target Support Files/Pods-Friends List VK/Pods-Friends List VK.release.xcconfig"; sourceTree = "<group>"; };
+		843FA8C61D3E1ED900329ED3 /* FLNotificationConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLNotificationConstants.h; sourceTree = "<group>"; };
+		843FA8C71D3E2DC100329ED3 /* Loading.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loading.storyboard; sourceTree = "<group>"; };
+		843FA8C91D3E307600329ED3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		843FA8CB1D3E391700329ED3 /* FriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewController.h; sourceTree = "<group>"; };
+		843FA8CC1D3E391700329ED3 /* FriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewController.m; sourceTree = "<group>"; };
+		843FA8CE1D3E3F6200329ED3 /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
+		843FA8CF1D3E3F6200329ED3 /* UserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
 		84F39D1C1D39452E005DF68D /* Friends List VK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friends List VK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F39D201D39452E005DF68D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84F39D221D39452E005DF68D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84F39D231D39452E005DF68D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		84F39D251D39452E005DF68D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		84F39D261D39452E005DF68D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		84F39D291D39452E005DF68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84F39D291D39452E005DF68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		84F39D2B1D39452E005DF68D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F39D2E1D39452E005DF68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F39D301D39452E005DF68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,12 +102,19 @@
 				84F39D231D39452E005DF68D /* AppDelegate.m */,
 				84F39D251D39452E005DF68D /* ViewController.h */,
 				84F39D261D39452E005DF68D /* ViewController.m */,
-				84F39D281D39452E005DF68D /* Main.storyboard */,
+				84F39D281D39452E005DF68D /* Login.storyboard */,
+				843FA8C91D3E307600329ED3 /* Main.storyboard */,
+				843FA8C71D3E2DC100329ED3 /* Loading.storyboard */,
 				84F39D2B1D39452E005DF68D /* Assets.xcassets */,
 				84F39D2D1D39452E005DF68D /* LaunchScreen.storyboard */,
 				84F39D301D39452E005DF68D /* Info.plist */,
 				84F39D381D396C8D005DF68D /* LoginViewController.h */,
 				84F39D391D396C8D005DF68D /* LoginViewController.m */,
+				843FA8CB1D3E391700329ED3 /* FriendsTableViewController.h */,
+				843FA8CC1D3E391700329ED3 /* FriendsTableViewController.m */,
+				843FA8CE1D3E3F6200329ED3 /* UserTableViewCell.h */,
+				843FA8CF1D3E3F6200329ED3 /* UserTableViewCell.m */,
+				843FA8C61D3E1ED900329ED3 /* FLNotificationConstants.h */,
 				84F39D1F1D39452E005DF68D /* Supporting Files */,
 			);
 			path = "Friends List VK";
@@ -172,9 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F39D2F1D39452E005DF68D /* LaunchScreen.storyboard in Resources */,
+				843FA8C81D3E2DC100329ED3 /* Loading.storyboard in Resources */,
 				84F39D371D395933005DF68D /* 25684.png in Resources */,
+				843FA8CA1D3E307600329ED3 /* Main.storyboard in Resources */,
 				84F39D2C1D39452E005DF68D /* Assets.xcassets in Resources */,
-				84F39D2A1D39452E005DF68D /* Main.storyboard in Resources */,
+				84F39D2A1D39452E005DF68D /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +255,8 @@
 			files = (
 				84F39D3A1D396C8D005DF68D /* LoginViewController.m in Sources */,
 				84F39D271D39452E005DF68D /* ViewController.m in Sources */,
+				843FA8D01D3E3F6200329ED3 /* UserTableViewCell.m in Sources */,
+				843FA8CD1D3E391700329ED3 /* FriendsTableViewController.m in Sources */,
 				84F39D241D39452E005DF68D /* AppDelegate.m in Sources */,
 				84F39D211D39452E005DF68D /* main.m in Sources */,
 			);
@@ -243,12 +265,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		84F39D281D39452E005DF68D /* Main.storyboard */ = {
+		84F39D281D39452E005DF68D /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				84F39D291D39452E005DF68D /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		84F39D2D1D39452E005DF68D /* LaunchScreen.storyboard */ = {

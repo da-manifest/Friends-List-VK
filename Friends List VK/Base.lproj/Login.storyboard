@@ -42,6 +42,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p02-F2-2cc"/>
                                 </connections>
@@ -67,6 +72,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="GL8-5d-p89"/>
+                    <connections>
+                        <outlet property="loginButton" destination="vFp-AY-Zak" id="eiV-9q-ce4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

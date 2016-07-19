@@ -8,22 +8,46 @@
 
 #import "LoginViewController.h"
 #import "VKsdk.h"
+#import "FLNotificationConstants.h"
 
-@interface LoginViewController ()
+@interface LoginViewController () <VKSdkDelegate>
 
 @end
 
 @implementation LoginViewController
 
+- (void)setupNotification
+{
+    
+}
+
+- (void)unsetupNotification
+{
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    VKSdk *sdk = [VKSdk instance];
+    [sdk registerDelegate:self];
+
     // Do any additional setup after loading the view.
 }
 
-
-- (IBAction) loginAction:(id)sender
+- (void) vkSdkAccessAuthorizationFinishedWithResult:(VKAuthorizationResult *)result
 {
-    [VKSdk authorize:@[@"friends"]];
+    [self.loginButton setEnabled:NO];
+}
+
+- (void) vkSdkUserAuthorizationFailed
+{
+    [self.loginButton setEnabled:YES];
+}
+
+- (IBAction)loginAction:(id)sender
+{
+    [self.loginButton setEnabled:NO];
+    [VKSdk authorize:VKSCOPE withOptions:VKAuthorizationOptionsDisableSafariController];
 }
 
 - (void)didReceiveMemoryWarning {

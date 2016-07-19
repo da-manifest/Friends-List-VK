@@ -10,6 +10,7 @@
 
 @interface LoginViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 - (IBAction)loginAction:(id)sender;
 
